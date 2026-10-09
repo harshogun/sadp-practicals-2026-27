@@ -1,4 +1,3 @@
-
 package com.harsh.sadp.pizza;
 
 public class Main {
@@ -9,13 +8,13 @@ public class Main {
         PizzaStore chicagoStore = new ChicagoPizzaStore();
 
         System.out.println("--- New York Pizza Store ---");
-        Pizza nyPizza = nyStore.orderPizza();
+        Pizza nyPizza = (Pizza) nyStore.orderPizza();
         System.out.println("Ordered: " + nyPizza.getName());
 
         System.out.println();
 
         System.out.println("--- Chicago Pizza Store ---");
-        Pizza chicagoPizza = chicagoStore.orderPizza();
+        Pizza chicagoPizza = (Pizza) chicagoStore.orderPizza();
         System.out.println("Ordered: " + chicagoPizza.getName());
     }
 }
