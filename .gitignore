@@ -1,0 +1,61 @@
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Java compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Build output
+out/
+target/
+build/
+bin/
+
+# Gradle
+.gradle/
+
+# Maven
+.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.bak
+*~
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local runtime data
+*.pid
+*.seed
+
+# Keep source code, documentation, and practical outputs
+!README.md
+!**/README.md
