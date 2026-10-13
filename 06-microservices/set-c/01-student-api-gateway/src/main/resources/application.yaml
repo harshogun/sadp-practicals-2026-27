@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: student-api-gateway
+
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: student-management-service
+              uri: http://localhost:8081
+              predicates:
+                - Path=/api/students,/api/students/**
+
+server:
+  port: 8090
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
